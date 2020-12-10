@@ -1,0 +1,20 @@
+# CircleCI configuration file
+# https://circleci.com/docs/2.0/language-android
+
+version: 2.1
+
+jobs:
+  build:
+
+    docker:
+      - image: circleci/android:api-30
+
+    environment:
+      GRADLE_OPTS: -Xmx4g -Dorg.gradle.daemon=false
+      JVM_OPTS: -Xmx4g
+
+    steps:
+      - checkout
+      - run:
+          name: Building a Debug APK
+          command: ./gradlew assembleDebug

@@ -1,5 +1,6 @@
 # Tempus
 
+[![CircleCI](https://circleci.com/gh/ChamichApps/Tempus/tree/develop.svg?style=shield)](https://circleci.com/gh/ChamichApps/Tempus/tree/develop)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/7d0a54e3dd6a448481fab2a7647a5858)](https://www.codacy.com/gh/ChamichApps/Tempus/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ChamichApps/Tempus&amp;utm_campaign=Badge_Grade)
 
 Application Tempus helps you to track your work time and work log. Application has an intuitive and simple user interface. 

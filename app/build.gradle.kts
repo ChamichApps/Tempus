@@ -37,6 +37,8 @@ android {
 
 dependencies {
     implementation(Dependencies.KOTLIN)
+    implementation(Dependencies.KOTLIN_STDLIB)
     implementation(Dependencies.APPCOMPAT)
     implementation(Dependencies.MATERIAL)
+    implementation(Dependencies.KOTLIN_REFLECT)
 }

@@ -7,6 +7,12 @@ Application Tempus helps you to track your work time and work log. Application h
 
 If you are self-employed, a contractor, freelancer, an hourly worker, or just want to track your working hours and calculate your earnings, then Tempus will do everything for you.
 
+## Author
+
+<a href="https://medium.com/@vapoyan" target="_blank">
+  <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG1bcSjvx4v9g/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=fIidjjlBbmqmaWB6YXKr4Rxa-r9FqZX5UhUvYkgEiYw" width="70" align="left">
+</a>
+
 ## License
 
 ```license

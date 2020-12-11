@@ -13,6 +13,13 @@ If you are self-employed, a contractor, freelancer, an hourly worker, or just wa
   <img src="https://media-exp1.licdn.com/dms/image/C4D03AQG1bcSjvx4v9g/profile-displayphoto-shrink_200_200/0?e=1608768000&v=beta&t=fIidjjlBbmqmaWB6YXKr4Rxa-r9FqZX5UhUvYkgEiYw" width="70" align="left">
 </a>
 
+**Viktor Apoyan**
+
+[![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/victorapoyan/)
+[![Twitter](https://img.shields.io/badge/-twitter-grey?logo=twitter)](https://twitter.com/ApoyanViktor)
+[![Stackoverflow](https://img.shields.io/badge/-stackoverflow-grey?logo=Stackoverflow)](https://stackoverflow.com/users/612606/viktor-apoyan)
+[![Medium](https://img.shields.io/badge/-medium-grey?logo=medium)](https://medium.com/@vapoyan)
+
 ## License
 
 ```license

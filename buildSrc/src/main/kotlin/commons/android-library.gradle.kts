@@ -1,9 +1,9 @@
-import dependencies.Dependencies
+package commons
 
 plugins {
-    id(PluginConfigs.ANDROID_APPLICATION)
-    id(PluginConfigs.KOTLIN_ANDROID)
-    id(PluginConfigs.KOTLIN_ANDROID_EXTENSIONS)
+    id("com.android.library")
+    id("kotlin-android")
+    id("kotlin-android-extensions")
 }
 
 android {
@@ -11,11 +11,8 @@ android {
     buildToolsVersion(AndroidConfigs.BUILD_TOOLS_VERSION)
 
     defaultConfig {
-        applicationId(AndroidConfigs.APPLICATION_ID)
         minSdkVersion(AndroidConfigs.MIN_SDK_VERSION)
         targetSdkVersion(AndroidConfigs.TARGET_SDK_VERSION)
-        versionCode(AndroidConfigs.VERSION_CODE)
-        versionName(AndroidConfigs.VERSION_NAME)
     }
 
     buildTypes {
@@ -33,11 +30,4 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
-}
-
-dependencies {
-    implementation(project(BuildModules.Libraries.DESIGN))
-
-    implementation(Dependencies.KOTLIN)
-    implementation(Dependencies.KOTLIN_STDLIB)
 }

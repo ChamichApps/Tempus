@@ -1,2 +1,7 @@
+/* Main application */
 include ':app'
+
+/* Library modules */
+include ':libraries:design'
+
 rootProject.name = "Tempus"

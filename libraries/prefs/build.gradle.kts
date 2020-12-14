@@ -5,6 +5,5 @@ plugins {
 }
 
 dependencies {
-    api(Dependencies.APPCOMPAT)
-    api(Dependencies.MATERIAL)
+
 }

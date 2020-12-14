@@ -3,5 +3,6 @@ include ':app'
 
 /* Library modules */
 include ':libraries:design'
+include ':libraries:prefs'
 
 rootProject.name = "Tempus"

@@ -1,3 +1,7 @@
+<a href="https://play.google.com/apps/testing/app.chamich.perfectus" target="_blank">
+  <img src="https://github.com/ChamichApps/Tempus/blob/develop/libraries/design/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" width="150" align="left">
+</a>
+
 # Tempus
 
 [![CircleCI](https://circleci.com/gh/ChamichApps/Tempus/tree/develop.svg?style=shield)](https://circleci.com/gh/ChamichApps/Tempus/tree/develop)

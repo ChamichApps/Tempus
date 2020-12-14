@@ -1,6 +1,9 @@
 /* Main application */
 include ':app'
 
+/* Feature modules */
+include ':features:authentication'
+
 /* Library modules */
 include ':libraries:design'
 include ':libraries:prefs'

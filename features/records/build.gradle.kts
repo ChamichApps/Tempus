@@ -14,17 +14,10 @@
  *  imitations under the License.
  */
 
-/* Main application */
-include ':app'
+plugins {
+    id("commons.android-feature")
+}
 
-/* Feature modules */
-include ':features:authentication'
-include ':features:projects'
-include ':features:records'
-include ':features:settings'
-
-/* Library modules */
-include ':libraries:design'
-include ':libraries:prefs'
-
-rootProject.name = "Tempus"
+dependencies {
+    implementation(project(BuildModules.Libraries.DESIGN))
+}

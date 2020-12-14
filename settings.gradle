@@ -3,6 +3,7 @@ include ':app'
 
 /* Feature modules */
 include ':features:authentication'
+include ':features:settings'
 
 /* Library modules */
 include ':libraries:design'

@@ -1,0 +1,7 @@
+<component name="CopyrightManager">
+  <settings default="chamich.app">
+    <module2copyright>
+      <element module="All" copyright="chamich.app" />
+    </module2copyright>
+  </settings>
+</component>

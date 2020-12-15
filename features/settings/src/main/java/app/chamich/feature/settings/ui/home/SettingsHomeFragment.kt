@@ -14,11 +14,27 @@
  *  imitations under the License.
  */
 
-plugins {
-    id("commons.android-feature")
-    id("kotlin-android")
-}
+package app.chamich.feature.settings.ui.home
 
-dependencies {
-    implementation(project(BuildModules.Libraries.DESIGN))
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import app.chamich.feature.settings.R
+
+
+/**
+ * Settings Home Fragment.
+ * Entry point for navigation through the settings.
+ */
+class SettingsHomeFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        return inflater.inflate(R.layout.fragment_settings_home, container, false)
+    }
 }

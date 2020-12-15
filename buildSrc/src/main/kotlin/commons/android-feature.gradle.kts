@@ -52,6 +52,7 @@ android {
 }
 
 dependencies {
+    implementation(Dependencies.KOTLIN_STDLIB)
     implementation(Dependencies.NAVIGATION_FRAGMENT)
     implementation(Dependencies.NAVIGATION_UI_KTX)
 }

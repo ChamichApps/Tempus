@@ -18,17 +18,20 @@
 /** Build modules used in the application */
 object BuildModules {
 
+    private const val FEATURES = ":features"
+    private const val LIBRARIES = ":libraries"
+
     /** Keeps library name constants */
     object Libraries {
-        const val DESIGN = ":libraries:design"
-        const val PREFS = ":libraries:prefs"
+        const val DESIGN = "$LIBRARIES:design"
+        const val PREFS = "$LIBRARIES:prefs"
     }
 
     /** Keeps feature name constants */
     object Features {
-        const val AUTHENTICATION = ":features:authentication"
-        const val PROJECTS = ":features:projects"
-        const val RECORDS = ":features:records"
-        const val SETTINGS = ":feature:settings"
+        const val AUTHENTICATION = "$FEATURES:authentication"
+        const val PROJECTS = "$FEATURES:projects"
+        const val RECORDS = "$FEATURES:records"
+        const val SETTINGS = "$FEATURES:settings"
     }
 }

@@ -16,6 +16,9 @@
 
 package commons
 
+import AndroidConfigs
+import dependencies.Dependencies
+
 plugins {
     id("com.android.library")
     id("kotlin-android")
@@ -46,4 +49,9 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+}
+
+dependencies {
+    implementation(Dependencies.NAVIGATION_FRAGMENT)
+    implementation(Dependencies.NAVIGATION_UI_KTX)
 }

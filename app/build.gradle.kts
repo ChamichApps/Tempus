@@ -52,8 +52,16 @@ android {
 }
 
 dependencies {
+    // Libraries
     implementation(project(BuildModules.Libraries.DESIGN))
 
+    // Features
+    implementation(project(BuildModules.Features.AUTHENTICATION))
+    implementation(project(BuildModules.Features.PROJECTS))
+    implementation(project(BuildModules.Features.RECORDS))
+    implementation(project(BuildModules.Features.SETTINGS))
+
+    // Other Dependencies
     implementation(Dependencies.KOTLIN)
     implementation(Dependencies.KOTLIN_STDLIB)
 }

@@ -21,5 +21,14 @@ object BuildModules {
     /** Keeps library name constants */
     object Libraries {
         const val DESIGN = ":libraries:design"
+        const val PREFS = ":libraries:prefs"
+    }
+
+    /** Keeps feature name constants */
+    object Features {
+        const val AUTHENTICATION = ":features:authentication"
+        const val PROJECTS = ":features:projects"
+        const val RECORDS = ":features:records"
+        const val SETTINGS = ":feature:settings"
     }
 }

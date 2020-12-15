@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><!--
+<!--
   ~ Copyright 2020 chamich.app
   ~
   ~  Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,15 +14,9 @@
   ~  imitations under the License.
   -->
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.chamich.tempus">
+<resources>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.Tempus" />
+    <!-- navigation/settings.xml -->
+    <string name="settings_navigation_label_settings_home">Settings</string>
 
-</manifest>
+</resources>

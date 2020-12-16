@@ -48,9 +48,6 @@ class HomeActivity : AppCompatActivity() {
         setupBottomNavigationBar()
     }
 
-    /**
-     * Called on first creation and when restoring state.
-     */
     private fun setupBottomNavigationBar() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation_view)
 
@@ -74,7 +71,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
     companion object {
-        /** Keeps the ids of navigation graphs. */
         private val NAVIGATION_GRAPH_IDS = listOf(
             R.navigation.records, R.navigation.projects, R.navigation.settings
         )

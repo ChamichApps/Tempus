@@ -23,4 +23,5 @@ plugins {
 dependencies {
     api(Dependencies.APPCOMPAT)
     api(Dependencies.MATERIAL)
+    api(Dependencies.CONSTRAINT_LAYOUT)
 }

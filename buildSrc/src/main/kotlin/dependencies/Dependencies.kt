@@ -22,6 +22,7 @@ private object Versions {
     const val APPCOMPAT = "1.1.0"
     const val MATERIAL = "1.1.0-beta01"
     const val NAVIGATION = "2.3.2"
+    const val CONSTRAINT_LAYOUT = "2.0.4"
 }
 
 /** Project Dependencies */
@@ -29,6 +30,8 @@ object Dependencies {
     const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN}"
     const val KOTLIN_STDLIB = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.KOTLIN}"
     const val APPCOMPAT = "androidx.appcompat:appcompat:${Versions.APPCOMPAT}"
+    const val CONSTRAINT_LAYOUT =
+        "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
     const val MATERIAL = "com.google.android.material:material:${Versions.MATERIAL}"
     const val NAVIGATION_FRAGMENT =
         "androidx.navigation:navigation-fragment-ktx:${Versions.NAVIGATION}"

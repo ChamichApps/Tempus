@@ -24,5 +24,5 @@ dependencies {
     // All common dependencies are taken from:
     //   buildSrc/.../commons/android-feature.gradle.kts
     //
-    // If you need to add a dependency specefic ONLY to this module do it here.
+    // If you need to add a dependency specefic ONLY to this module do it below.
 }

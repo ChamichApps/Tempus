@@ -14,15 +14,27 @@
  *  imitations under the License.
  */
 
-plugins {
-    id("commons.android-feature")
-}
+package app.chamich.feature.settings.ui.home
 
-dependencies {
-    implementation(project(BuildModules.Libraries.DESIGN))
-    
-    // All common dependencies are taken from:
-    //   buildSrc/.../commons/android-feature.gradle.kts
-    //
-    // If you need to add a dependency specefic ONLY to this module do it below.
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import app.chamich.feature.settings.R
+
+
+/**
+ * Settings Home Fragment.
+ * Entry point for navigation through the settings.
+ */
+class SettingsHomeFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        return inflater.inflate(R.layout.fragment_settings_home, container, false)
+    }
 }

@@ -23,6 +23,7 @@ private object Versions {
     const val MATERIAL = "1.1.0-beta01"
     const val NAVIGATION = "2.3.2"
     const val CONSTRAINT_LAYOUT = "2.0.4"
+    const val HILT = "2.28-alpha"
 }
 
 /** Project Dependencies */
@@ -36,4 +37,6 @@ object Dependencies {
     const val NAVIGATION_FRAGMENT =
         "androidx.navigation:navigation-fragment-ktx:${Versions.NAVIGATION}"
     const val NAVIGATION_UI_KTX = "androidx.navigation:navigation-ui-ktx:${Versions.NAVIGATION}"
+    const val HILT_ANDROID = "com.google.dagger:hilt-android:${Versions.HILT}"
+    const val HILT_ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
 }

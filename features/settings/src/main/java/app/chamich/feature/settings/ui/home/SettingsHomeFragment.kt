@@ -22,19 +22,25 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import app.chamich.feature.settings.R
+import app.chamich.library.prefs.Preferences
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 
 /**
  * Settings Home Fragment.
  * Entry point for navigation through the settings.
  */
-class SettingsHomeFragment : Fragment() {
+@AndroidEntryPoint
+internal class SettingsHomeFragment : Fragment() {
+
+    @Inject
+    lateinit var preferences: Preferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_settings_home, container, false)
     }
 }

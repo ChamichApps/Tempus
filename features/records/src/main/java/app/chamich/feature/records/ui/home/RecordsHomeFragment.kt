@@ -28,7 +28,7 @@ import app.chamich.feature.records.R
  * Records Home Fragment
  * Entry point for navigation through the records.
  */
-class RecordsHomeFragment : Fragment() {
+internal class RecordsHomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

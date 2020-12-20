@@ -20,6 +20,8 @@ plugins {
     id(PluginConfigs.ANDROID_APPLICATION)
     id(PluginConfigs.KOTLIN_ANDROID)
     id(PluginConfigs.KOTLIN_ANDROID_EXTENSIONS)
+    id(PluginConfigs.KOTLIN_KAPT)
+    id(PluginConfigs.DAGGER_HILT)
 }
 
 android {
@@ -61,6 +63,13 @@ dependencies {
     implementation(project(BuildModules.Features.PROJECTS))
     implementation(project(BuildModules.Features.RECORDS))
     implementation(project(BuildModules.Features.SETTINGS))
+
+    // Libraries
+    implementation(project(BuildModules.Libraries.PREFS))
+
+    // Hilt Dependencies
+    implementation(Dependencies.HILT_ANDROID)
+    kapt(Dependencies.HILT_ANDROID_COMPILER)
 
     // Other Dependencies
     implementation(Dependencies.KOTLIN)

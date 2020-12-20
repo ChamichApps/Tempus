@@ -28,7 +28,7 @@ import app.chamich.feature.projects.R
  * Projects Home Fragment.
  * Entry point for navigation through the projects.
  */
-class ProjectsHomeFragment : Fragment() {
+internal class ProjectsHomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

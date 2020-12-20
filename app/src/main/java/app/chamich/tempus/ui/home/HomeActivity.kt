@@ -14,19 +14,22 @@
  *  imitations under the License.
  */
 
-package app.chamich.tempus
+package app.chamich.tempus.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.LiveData
 import androidx.navigation.NavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import app.chamich.tempus.R
 import app.chamich.tempus.extensions.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
- * Application entry point activity.
+ * In the single activity architecture, this activity serves as an application entry point
  */
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
 
     private var currentNavController: LiveData<NavController>? = null

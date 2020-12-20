@@ -14,10 +14,22 @@
  *  imitations under the License.
  */
 
+import dependencies.Dependencies
+
 plugins {
     id("commons.android-library")
+    id(PluginConfigs.DAGGER_HILT)
+    id(PluginConfigs.KOTLIN_KAPT)
 }
 
 dependencies {
 
+    // All common dependencies are taken from:
+    //   buildSrc/.../commons/android-library.gradle.kts
+    //
+    // If you need to add a dependency specific ONLY to this module do it below.
+
+    // Hilt Dependencies
+    implementation(Dependencies.HILT_ANDROID)
+    kapt(Dependencies.HILT_ANDROID_COMPILER)
 }

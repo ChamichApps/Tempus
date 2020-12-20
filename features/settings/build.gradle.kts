@@ -20,9 +20,10 @@ plugins {
 
 dependencies {
     implementation(project(BuildModules.Libraries.DESIGN))
-    
+
     // All common dependencies are taken from:
     //   buildSrc/.../commons/android-feature.gradle.kts
     //
-    // If you need to add a dependency specefic ONLY to this module do it below.
+    // If you need to add a dependency specific ONLY to this module do it below.
+    implementation(project(BuildModules.Libraries.PREFS))
 }

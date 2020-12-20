@@ -14,27 +14,13 @@
  *  imitations under the License.
  */
 
-package app.chamich.feature.home.ui.home
+package app.chamich.library.prefs
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import app.chamich.feature.home.R
-
+import android.content.Context
+import android.content.SharedPreferences
 
 /**
- * Home Fragment.
- * Entry point for navigation through the home.
+ * This class provides access to the application preferences. To create an
+ * instance of the [Preferences] class you need to provide an application [Context]
  */
-internal class HomeFragment : Fragment() {
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
-    }
-}
+class Preferences(private val preferences: SharedPreferences)

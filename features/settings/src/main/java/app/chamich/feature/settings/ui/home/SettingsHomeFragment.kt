@@ -32,7 +32,7 @@ import javax.inject.Inject
  * Entry point for navigation through the settings.
  */
 @AndroidEntryPoint
-class SettingsHomeFragment : Fragment() {
+internal class SettingsHomeFragment : Fragment() {
 
     @Inject
     lateinit var preferences: Preferences

@@ -28,7 +28,7 @@ import app.chamich.feature.home.R
  * Home Fragment.
  * Entry point for navigation through the home.
  */
-class HomeFragment : Fragment() {
+internal class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -33,7 +33,7 @@ import javax.inject.Singleton
 @InstallIn(ApplicationComponent::class)
 object PreferencesModule {
 
-    private const val PREFERENCES_FILE_NAME = "app.chamich.library.prefs.TEPUOS_PREFERENCES"
+    private const val PREFERENCES_FILE_NAME = "app.chamich.library.prefs.TEMPUS_PREFERENCES"
 
     /**
      * Provides [Preferences] instance.

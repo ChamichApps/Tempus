@@ -14,25 +14,19 @@
   ~  imitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".HomeActivity">
+    android:id="@+id/navigation_home"
+    app:startDestination="@id/destination_home">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/navigation_host_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+    <!--
+        Home Fragment.
+    -->
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="app.chamich.feature.home.ui.home.HomeFragment"
+        android:label="@string/home_navigation_label_home"
+        tools:layout="@layout/fragment_home" />
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/bottom_navigation" />
-
-</LinearLayout>
+</navigation>

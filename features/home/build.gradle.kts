@@ -14,18 +14,15 @@
  *  imitations under the License.
  */
 
-/* Main application */
-include ':app'
+plugins {
+    id("commons.android-feature")
+}
 
-/* Feature modules */
-include ':features:authentication'
-include ':features:home'
-include ':features:projects'
-include ':features:records'
-include ':features:settings'
+dependencies {
+    implementation(project(BuildModules.Libraries.DESIGN))
 
-/* Library modules */
-include ':libraries:design'
-include ':libraries:prefs'
-
-rootProject.name = "Tempus"
+    // All common dependencies are taken from:
+    //   buildSrc/.../commons/android-feature.gradle.kts
+    //
+    // If you need to add a dependency specefic ONLY to this module do it below.
+}

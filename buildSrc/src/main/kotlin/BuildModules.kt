@@ -30,6 +30,7 @@ object BuildModules {
     /** Keeps feature name constants */
     object Features {
         const val AUTHENTICATION = "$FEATURES:authentication"
+        const val HOME = "$FEATURES:home"
         const val PROJECTS = "$FEATURES:projects"
         const val RECORDS = "$FEATURES:records"
         const val SETTINGS = "$FEATURES:settings"

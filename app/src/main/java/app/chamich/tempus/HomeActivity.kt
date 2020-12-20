@@ -72,7 +72,7 @@ class HomeActivity : AppCompatActivity() {
 
     companion object {
         private val NAVIGATION_GRAPH_IDS = listOf(
-            R.navigation.records, R.navigation.projects, R.navigation.settings
+            R.navigation.home, R.navigation.records, R.navigation.projects, R.navigation.settings
         )
     }
 }

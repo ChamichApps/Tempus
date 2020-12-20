@@ -16,6 +16,13 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Home -->
+    <item
+        android:id="@+id/navigation_home"
+        android:contentDescription="@string/home_navigation_label_home"
+        android:icon="@drawable/design_icon_home"
+        android:title="@string/home_navigation_label_home" />
+
     <!-- Records -->
     <item
         android:id="@+id/navigation_records"

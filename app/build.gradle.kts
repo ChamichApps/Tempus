@@ -57,6 +57,7 @@ dependencies {
 
     // Features
     implementation(project(BuildModules.Features.AUTHENTICATION))
+    implementation(project(BuildModules.Features.HOME))
     implementation(project(BuildModules.Features.PROJECTS))
     implementation(project(BuildModules.Features.RECORDS))
     implementation(project(BuildModules.Features.SETTINGS))

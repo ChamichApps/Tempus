@@ -14,16 +14,13 @@
  *  imitations under the License.
  */
 
-plugins {
-    id("commons.android-feature")
-}
+package app.chamich.library.prefs
 
-dependencies {
-    implementation(project(BuildModules.Libraries.DESIGN))
+import android.content.Context
+import android.content.SharedPreferences
 
-    // All common dependencies are taken from:
-    //   buildSrc/.../commons/android-feature.gradle.kts
-    //
-    // If you need to add a dependency specific ONLY to this module do it below.
-    implementation(project(BuildModules.Libraries.PREFS))
-}
+/**
+ * This class provides access to the application preferences. To create an
+ * instance of the [Preferences] class you need to provide an application [Context]
+ */
+class Preferences(private val preferences: SharedPreferences)

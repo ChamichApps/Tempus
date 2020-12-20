@@ -64,6 +64,9 @@ dependencies {
     implementation(project(BuildModules.Features.RECORDS))
     implementation(project(BuildModules.Features.SETTINGS))
 
+    // Libraries
+    implementation(project(BuildModules.Libraries.PREFS))
+
     // Hilt Dependencies
     implementation(Dependencies.HILT_ANDROID)
     kapt(Dependencies.HILT_ANDROID_COMPILER)

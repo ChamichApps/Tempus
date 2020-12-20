@@ -24,10 +24,12 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import app.chamich.tempus.R
 import app.chamich.tempus.extensions.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
- * Application entry point activity.
+ * In the single activity architecture, this activity serves as an application entry point
  */
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
 
     private var currentNavController: LiveData<NavController>? = null

@@ -1,4 +1,4 @@
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2020 chamich.app
   ~
   ~  Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,7 +16,6 @@
 
 <resources>
 
-    <!-- navigation/projects.xml -->
-    <string name="projects_navigation_label_projects_home">Projects</string>
+    <dimen name="design_margin_normal_half">8dp</dimen>
 
 </resources>

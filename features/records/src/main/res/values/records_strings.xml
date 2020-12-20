@@ -16,7 +16,13 @@
 
 <resources>
 
+    <!-- Generic Strings -->
+    <string name="records_text_records">Records</string>
+
     <!-- navigation/records.xml -->
-    <string name="records_navigation_label_records_home">Records</string>
+    <string name="records_navigation_label_records_home">@string/records_text_records</string>
+
+    <!-- RecordsHomeFragment -->
+    <string name="records_home_fragment_label_records">@string/records_text_records</string>
 
 </resources>

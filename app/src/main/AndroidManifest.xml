@@ -25,6 +25,7 @@
         android:name=".TempusApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="portrait"
         android:theme="@style/Theme.Tempus">
         <activity android:name=".ui.home.HomeActivity">
             <intent-filter>

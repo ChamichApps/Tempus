@@ -16,8 +16,16 @@
 
 <resources>
 
+    <!-- Style used for Titles -->
     <style name="Design.Widget.TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline4">
         <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textStyle">bold</item>
     </style>
+
+    <!-- Style used for Titles in the Cards -->
+    <style name="Design.Widget.TextAppearance.CardTitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
 
 </resources>

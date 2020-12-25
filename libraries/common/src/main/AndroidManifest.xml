@@ -14,13 +14,6 @@
   ~  imitations under the License.
   -->
 
-<resources>
+<manifest package="app.chamich.library.common">
 
-    <!-- Margins -->
-    <dimen name="design_margin_normal_half">8dp</dimen>
-    <dimen name="design_margin_normal">16dp</dimen>
-
-    <!-- Corner Radius -->
-    <dimen name="design_corner_radius_normal">16dp</dimen>
-
-</resources>
+</manifest>

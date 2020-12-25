@@ -23,6 +23,7 @@ object BuildModules {
 
     /** Keeps library name constants */
     object Libraries {
+        const val COMMON = "$LIBRARIES:common"
         const val DESIGN = "$LIBRARIES:design"
         const val PREFS = "$LIBRARIES:prefs"
     }

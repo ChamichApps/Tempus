@@ -17,4 +17,5 @@
 <resources>
     <color name="design_black">#FF000000</color>
     <color name="design_white">#FFFFFFFF</color>
+    <color name="design_gray">#161618</color>
 </resources>

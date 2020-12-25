@@ -28,8 +28,8 @@
         style="@style/Design.Widget.TextAppearance.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/design_margin_normal_half"
-        android:layout_marginTop="@dimen/design_margin_normal_half"
+        android:layout_marginStart="@dimen/design_margin_normal"
+        android:layout_marginTop="@dimen/design_margin_normal"
         android:text="@string/records_home_fragment_label_records"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -24,5 +24,6 @@
 
     <!-- SettingsHomeFragment -->
     <string name="settings_home_fragment_label_settings">@string/settings_text_settings</string>
+    <string name="settings_home_fragment_label_default_hourly_rate">Default hourly rate</string>
 
 </resources>

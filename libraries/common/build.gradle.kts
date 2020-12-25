@@ -14,19 +14,28 @@
  *  imitations under the License.
  */
 
-/* Main application */
-include ':app'
+import dependencies.Dependencies
 
-/* Feature modules */
-include ':features:authentication'
-include ':features:home'
-include ':features:projects'
-include ':features:records'
-include ':features:settings'
+plugins {
+    id("commons.android-library")
+}
 
-/* Library modules */
-include ':libraries:common'
-include ':libraries:design'
-include ':libraries:prefs'
+android {
 
-rootProject.name = "Tempus"
+    // All common android configurations are taken from:
+    //   buildSrc/.../commons/android-library.gradle.kts
+    //
+    // If you need to add a dependency specific ONLY to this module do it below.
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    // All common dependencies are taken from:
+    //   buildSrc/.../commons/android-library.gradle.kts
+    //
+    // If you need to add a dependency specific ONLY to this module do it below.
+    implementation(Dependencies.MATERIAL)
+}

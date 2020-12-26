@@ -16,12 +16,9 @@
 
 package app.chamich.feature.settings.ui.home
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
 import app.chamich.feature.settings.R
+import app.chamich.feature.settings.databinding.FragmentSettingsHomeBinding
+import app.chamich.library.common.CommonFragment
 import app.chamich.library.prefs.Preferences
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
@@ -32,15 +29,9 @@ import javax.inject.Inject
  * Entry point for navigation through the settings.
  */
 @AndroidEntryPoint
-internal class SettingsHomeFragment : Fragment() {
+internal class SettingsHomeFragment
+    : CommonFragment<FragmentSettingsHomeBinding>(R.layout.fragment_settings_home) {
 
     @Inject
     lateinit var preferences: Preferences
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_settings_home, container, false)
-    }
 }

@@ -14,24 +14,105 @@
   ~  imitations under the License.
   -->
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?design_background_color"
-    tools:context=".ui.home.SettingsHomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Title -->
-    <TextView
-        android:id="@+id/text_view_settings_home_title"
-        style="@style/Design.Widget.TextAppearance.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/design_margin_normal_half"
-        android:layout_marginTop="@dimen/design_margin_normal_half"
-        android:text="@string/settings_home_fragment_label_settings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <data>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?design_background_color"
+        tools:context=".ui.home.SettingsHomeFragment">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/text_view_settings_home_title"
+            style="@style/Design.Widget.TextAppearance.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/design_margin_normal"
+            android:layout_marginTop="@dimen/design_margin_normal"
+            android:text="@string/settings_home_fragment_label_settings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Scroll View which contains all the settings -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/design_margin_normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_settings_home_title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/design_margin_normal"
+                android:layout_marginRight="@dimen/design_margin_normal"
+                android:orientation="vertical">
+
+                <!-- Default hourly rate -->
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="?attr/design_card_background_color"
+                    app:cardCornerRadius="@dimen/design_corner_radius_normal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="false"
+                        android:duplicateParentState="true"
+                        android:focusable="false">
+
+                        <TextView
+                            android:id="@+id/text_view_settings_home_default_hourly_rate"
+                            style="@style/Design.Widget.TextAppearance.CardTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/design_margin_normal"
+                            android:layout_marginTop="@dimen/design_margin_normal"
+                            android:text="@string/settings_home_fragment_label_default_hourly_rate"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:id="@+id/editTextNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/design_margin_normal"
+                            android:layout_marginTop="@dimen/design_margin_normal_half"
+                            android:layout_marginEnd="@dimen/design_margin_normal"
+                            android:layout_marginBottom="@dimen/design_margin_normal_half"
+                            android:background="@null"
+                            android:clickable="false"
+                            android:duplicateParentState="true"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/text_view_settings_home_default_hourly_rate" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

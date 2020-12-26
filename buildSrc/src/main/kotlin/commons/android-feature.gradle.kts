@@ -17,6 +17,7 @@
 package commons
 
 import AndroidConfigs
+import BuildModules
 import dependencies.Dependencies
 
 plugins {
@@ -51,9 +52,15 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
+
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
+    implementation(project(BuildModules.Libraries.COMMON))
+
     implementation(Dependencies.KOTLIN_STDLIB)
     implementation(Dependencies.NAVIGATION_FRAGMENT)
     implementation(Dependencies.NAVIGATION_UI_KTX)

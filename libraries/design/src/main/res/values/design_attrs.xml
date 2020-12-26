@@ -16,6 +16,9 @@
 
 <resources>
 
+    <!-- Background color -->
     <attr name="design_background_color" format="color" />
+    <!-- Background color used for Cards -->
+    <attr name="design_card_background_color" format="color" />
 
 </resources>

@@ -27,5 +27,6 @@
         <item name="colorOnSecondary">@color/design_white</item>
         <!-- Customize your theme here. -->
         <item name="design_background_color">@color/design_black</item>
+        <item name="design_card_background_color">@color/design_gray</item>
     </style>
 </resources>

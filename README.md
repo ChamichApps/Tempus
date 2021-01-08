@@ -36,7 +36,7 @@ Kanban board with todos, in progress and completed tasks can be found [here](htt
 ## License
 
 ```license
- Copyright (c) 2020 chamich.app
+ Copyright (c) 2020-2021 chamich.app
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
